@@ -1,0 +1,34 @@
+{
+	"name": "covid-19.tracking-app",
+	"version": "1.0.0",
+	"description": "A corona web application to track real time data in the world and give some practical informations about the corona virus",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BrahimS/covid-19-tracking-app.git"
+	},
+	"keywords": [
+		"Data",
+		"Tracking",
+		"app",
+		"ReactJs",
+		"NextJs"
+	],
+	"author": "Brahim Sourny",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/BrahimS/covid-19-tracking-app/issues"
+	},
+	"homepage": "https://github.com/BrahimS/covid-19-tracking-app#readme",
+	"dependencies": {
+		"next": "^9.3.5",
+		"node-fetch": "^2.6.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	}
+}
