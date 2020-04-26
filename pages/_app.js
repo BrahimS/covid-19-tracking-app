@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
 import "../public/styles/index.sass";
 
-function MyApp({ Component, pageProps }) {
+function BsApp({ Component, pageProps }) {
 	return (
 		<div className="container">
 			<Component {...pageProps} />
@@ -9,4 +9,4 @@ function MyApp({ Component, pageProps }) {
 	);
 }
 
-export default MyApp;
+export default BsApp;

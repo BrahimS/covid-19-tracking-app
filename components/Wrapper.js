@@ -7,7 +7,7 @@ const Wrapper = ({ children, title }) => (
 			<title>{title}</title>
 		</Head>
 		<Navbar />
-		<section className="container">{children}</section>
+		<section>{children}</section>
 	</section>
 );
 export default Wrapper;
