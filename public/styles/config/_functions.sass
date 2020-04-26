@@ -1,0 +1,13 @@
+// FUNCTIONS
+
+// Import if Google Fonts is defined
+@if variable-exists(font_url__google1)
+  @import url($font_url__google1)
+
+@if variable-exists(font_url__google2)
+  @import url($font_url__google2)
+
+// Calculate em values
+@function em($target, $context: $browser-context)
+  @return ($target / $context) * 1em
+

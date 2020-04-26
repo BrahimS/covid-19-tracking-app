@@ -1,0 +1,26 @@
+// Media queries
+@mixin mediaQ($break)
+  @if $break == "small"
+    @media (min-width: $brkpoint_sm) and (max-width: $brkpoint_md)
+        @content
+
+  @else if $break == "medium"
+    @media (min-width: $brkpoint_md + 1)
+      @content
+
+  @else if $break == "large"
+    @media (min-width: $brkpoint_lg + 1)
+      @content
+
+  @else if $break == "x_large"
+    @media (min-width: $brkpoint_xlg)
+      @content
+
+  @else
+    @error "Ai! No value could be retrieved for `#{$break}` "
+
+
+// Antialiasing mode font rendering
+@mixin font-smoothing
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale

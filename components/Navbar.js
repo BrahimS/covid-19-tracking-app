@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 const Navbar = () => (
 	<ul>
 		<li>
@@ -12,6 +12,6 @@ const Navbar = () => (
 			</Link>
 		</li>
 	</ul>
-)
+);
 
-export default Navbar
+export default Navbar;

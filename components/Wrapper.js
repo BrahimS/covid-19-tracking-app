@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Navbar from './Navbar'
+import Head from "next/head";
+import Navbar from "./Navbar";
 
 const Wrapper = ({ children, title }) => (
 	<section>
@@ -7,7 +7,7 @@ const Wrapper = ({ children, title }) => (
 			<title>{title}</title>
 		</Head>
 		<Navbar />
-		{children}
+		<section className="container">{children}</section>
 	</section>
-)
-export default Wrapper
+);
+export default Wrapper;
