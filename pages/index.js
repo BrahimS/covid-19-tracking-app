@@ -1,22 +1,33 @@
 import Wrapper from "../components/Wrapper";
-import fetch from "node-fetch";
-const Homepage = () => (
+import fetch from "isomorphic-unfetch";
+const Homepage = ({ data }) => (
 	<Wrapper title="Home Page">
 		<section className="section_padding">
+			{console.log({ data })}
 			<h1>
 				<span className="heading_span">
-					{content.sectionOne.span} <br />
+					{data.sectionOne.span}
+					<br />
 				</span>
-				Covid-19?
+				{data.sectionOne.title}
 			</h1>
+			<p>{data.sectionOne.text}</p>
 		</section>
 	</Wrapper>
 );
 
-Homepage.getInitialProps = async (ctx) => {
-	const res = await fetch("../pageContent/content.json");
-	const json = await res.json();
-	return { content: json.stargazers_count };
-};
+export async function getStaticProps() {
+	// Call an external API endpoint to get posts.
+	const API = `https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/pageContent/content.json`;
+	const res = await fetch(API);
+	const data = await res.json();
 
+	// By returning { props: posts }, the Blog component
+	// will receive `posts` as a prop at build time
+	return {
+		props: {
+			data,
+		},
+	};
+}
 export default Homepage;
