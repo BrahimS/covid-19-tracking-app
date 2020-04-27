@@ -19,7 +19,6 @@ const Homepage = ({ data }) => (
 		</section>
 		{/* Section Two */}
 		<section className="section_content">
-			{console.log({ data })}
 			<h1>
 				<span className="heading_span">
 					{data.sectionTwo.span}
@@ -44,6 +43,36 @@ const Homepage = ({ data }) => (
 						<img src={data.sectionTwo.card3.icon} />
 						<p className="headingTwo">{data.sectionTwo.card3.title}</p>
 						<p>{data.sectionTwo.card3.text}</p>
+					</article>
+				</div>
+			</div>
+		</section>
+		{/* Section Three */}
+		<section className="section_content">
+			<h1>
+				<span className="heading_span">
+					{data.sectionThree.span}
+					<br />
+				</span>
+				{data.sectionThree.title}
+			</h1>
+			<div className="">
+				<p className="para_width__50">{data.sectionThree.text}</p>
+				<div className="section section_cards">
+					<article className="card">
+						<img src={data.sectionThree.card1.icon} />
+						<p className="headingTwo">{data.sectionThree.card1.title}</p>
+						<p>{data.sectionThree.card1.text}</p>
+					</article>
+					<article className="card">
+						<img src={data.sectionThree.card2.icon} />
+						<p className="headingTwo">{data.sectionThree.card2.title}</p>
+						<p>{data.sectionThree.card2.text}</p>
+					</article>
+					<article className="card">
+						<img src={data.sectionThree.card3.icon} />
+						<p className="headingTwo">{data.sectionThree.card3.title}</p>
+						<p>{data.sectionThree.card3.text}</p>
 					</article>
 				</div>
 			</div>
