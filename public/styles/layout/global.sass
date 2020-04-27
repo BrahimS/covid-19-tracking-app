@@ -13,15 +13,29 @@ body
 	line-height: $base_line__height
 	font-family: $font_family__primary
 
-section
+.section
 	display: flex
-	flex-direction: column
+	flex-direction: row
+	@include mediaQ('small')
+		flex-direction: column
 
 	&_content
-		flex-direction: row
-		width: 50%
 
-	&_hero
+		&__para
+			width: 45%
+			margin-right: 10%
+			font-weight: $font_weight__light
+
+			@include mediaQ('small')
+				min-width: 100% !important
+				margin-right: 0 !important
+				margin-bottom: em($unitPx * 4)
+
+
+		&__hero
+			margin-top: em(-50px)
+
+	&_
 
 
 

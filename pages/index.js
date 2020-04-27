@@ -11,9 +11,9 @@ const Homepage = ({ data }) => (
 				</span>
 				{data.sectionOne.title}
 			</h1>
-			<div className="section_content">
-				<p>{data.sectionOne.text}</p>
-				<img src={data.sectionOne.img} />
+			<div className="section">
+				<p className="section_content__para">{data.sectionOne.text}</p>
+				<img className="section_content__hero" src={data.sectionOne.img} />
 			</div>
 		</section>
 	</Wrapper>
