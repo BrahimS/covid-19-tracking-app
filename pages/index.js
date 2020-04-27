@@ -11,7 +11,10 @@ const Homepage = ({ data }) => (
 				</span>
 				{data.sectionOne.title}
 			</h1>
-			<p>{data.sectionOne.text}</p>
+			<div className="section_content">
+				<p>{data.sectionOne.text}</p>
+				<img src={data.sectionOne.img} />
+			</div>
 		</section>
 	</Wrapper>
 );
