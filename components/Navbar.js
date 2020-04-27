@@ -1,6 +1,6 @@
 import Link from "next/link";
 const Navbar = () => (
-	<ul>
+	<ul className="header_padding">
 		<li>
 			<Link href="/">
 				<a>Covid-19</a>

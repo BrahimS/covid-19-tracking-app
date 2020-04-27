@@ -2,7 +2,8 @@ import Wrapper from "../components/Wrapper";
 import fetch from "isomorphic-unfetch";
 const Homepage = ({ data }) => (
 	<Wrapper title="Home Page">
-		<section className="section_padding">
+		{/* Section One */}
+		<section className="section_content">
 			{console.log({ data })}
 			<h1>
 				<span className="heading_span">
@@ -14,6 +15,21 @@ const Homepage = ({ data }) => (
 			<div className="section">
 				<p className="section_content__para">{data.sectionOne.text}</p>
 				<img className="section_content__hero" src={data.sectionOne.img} />
+			</div>
+		</section>
+		{/* Section Two */}
+		<section className="section_content">
+			{console.log({ data })}
+			<h1>
+				<span className="heading_span">
+					{data.sectionTwo.span}
+					<br />
+				</span>
+				{data.sectionTwo.title}
+			</h1>
+			<div className="section">
+				<p className="section_content__para">{data.sectionTwo.text}</p>
+				<div section_cards></div>
 			</div>
 		</section>
 	</Wrapper>

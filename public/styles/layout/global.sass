@@ -13,24 +13,41 @@ body
 	line-height: $base_line__height
 	font-family: $font_family__primary
 
+.header
+	&_padding
+		padding-bottom: em(197px)
+
 .section
 	display: flex
 	flex-direction: row
 	@include mediaQ('small')
 		flex-direction: column
+	@include mediaQ('medium')
+		flex-direction: column
+	@include mediaQ('large')
+		flex-direction: row
 
 	&_content
+		padding-bottom: em(70px)
 
 		&__para
-			width: 45%
-			margin-right: 10%
+
 			font-weight: $font_weight__light
 
-			@include mediaQ('small')
-				min-width: 100% !important
-				margin-right: 0 !important
+			@include mediaQ('large')
+				width: 50vw!important
+				margin-right: 10% !important
 				margin-bottom: em($unitPx * 4)
 
+			@include mediaQ('medium')
+				width: 100% !important
+				margin-right: 10% !important
+				margin-bottom: em($unitPx * 10)
+
+			@include mediaQ('small')
+				width: 100% !important
+				margin-right: 0 !important
+				margin-bottom: em($unitPx * 4)
 
 		&__hero
 			margin-top: em(-50px)
