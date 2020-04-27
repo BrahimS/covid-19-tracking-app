@@ -3,14 +3,16 @@
 
 body
 	width: 100vw
+	max-width: 1280px
 	height: 100vh
-	margin: 0
+	margin: 0 auto
 	padding: em(50px)
 	overflow-x: hidden
 	background: $bkgColor
 	color: $white
 	letter-spacing: $letterSpacing
 	line-height: $base_line__height
+	font-weight: $font_weight__light
 	font-family: $font_family__primary
 
 .header
@@ -32,29 +34,37 @@ body
 
 		&__para
 
-			font-weight: $font_weight__light
-
 			@include mediaQ('large')
 				width: 50vw!important
-				margin-right: 10% !important
 				margin-bottom: em($unitPx * 4)
 
 			@include mediaQ('medium')
 				width: 100% !important
-				margin-right: 10% !important
 				margin-bottom: em($unitPx * 10)
 
 			@include mediaQ('small')
 				width: 100% !important
-				margin-right: 0 !important
 				margin-bottom: em($unitPx * 4)
 
 		&__hero
 			margin-top: em(-50px)
+			margin-left: 10% !important
 
-	&_
+	&_cards
+		justify-content: center
+		align-items: flex-start
 
 
+.card
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding: 0 em(30px)
+	max-width: 400px
+
+	& p
+		text-align: center
 
 .section_padding
 	padding-top: em(195px)
@@ -64,6 +74,7 @@ body
 	margin-bottom: ($unitEm)
 	color: $grey
 	font-size: ($unitPx * 2.5)
+
 h1
 	color: $orange
 	padding: $headingPadding
@@ -72,3 +83,13 @@ h1
 	font-weight: $font_weight__ultraBold
 	font-size: $font_size__base * 2.8
 	font-family: $font_family__primary
+
+.headingTwo
+	color: $orange
+	padding: $headingPadding
+	letter-spacing: 0
+	line-height: $base_line__height
+	font-weight: $font_weight__ultraBold
+	font-size: $font_size__base * 1.2
+	font-family: $font_family__primary
+

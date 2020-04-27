@@ -1,14 +1,9 @@
 // Clearfix
 
-%clearfix
-  &::after
-    content: ""
-    display: table
-    clear: both
 
-// Pseudo-elements
-%pseudos
-  content: ''
-  display: block
-  position: absolute
-  top: 4px
+.para_width__50
+	margin-bottom: em($unitPx * 10)
+	@include mediaQ('small')
+		width: 100% !important
+	@include mediaQ('large')
+		width: 50% !important
