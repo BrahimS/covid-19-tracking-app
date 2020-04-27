@@ -4,7 +4,6 @@ const Homepage = ({ data }) => (
 	<Wrapper title="Home Page">
 		{/* Section One */}
 		<section className="section_content">
-			{console.log({ data })}
 			<h1>
 				<span className="heading_span">
 					{data.sectionOne.span}
@@ -107,43 +106,45 @@ const Homepage = ({ data }) => (
 				<p className="para_width__50">{data.sectionFour.text}</p>
 				<div className="section section_cards">
 					<article className="card">
-						<img src={data.sectionFour.card1.icon} />
+						<img className="padding_30" src={data.sectionFour.card1.icon} />
 
 						<p>{data.sectionFour.card1.text}</p>
 					</article>
 					<article className="card">
-						<img src={data.sectionFour.card2.icon} />
+						<img className="padding_30" src={data.sectionFour.card2.icon} />
 
 						<p>{data.sectionFour.card2.text}</p>
 					</article>
 					<article className="card">
-						<img src={data.sectionFour.card3.icon} />
+						<img className="padding_30" src={data.sectionFour.card3.icon} />
 
 						<p>{data.sectionFour.card3.text}</p>
 					</article>
 				</div>
 				<div className="section section_cards">
 					<article className="card">
-						<img src={data.sectionFour.card4.icon} />
+						<img className="padding_30" src={data.sectionFour.card4.icon} />
 
 						<p>{data.sectionFour.card4.text}</p>
 					</article>
 					<article className="card">
-						<img src={data.sectionFour.card5.icon} />
+						<img className="padding_30" src={data.sectionFour.card5.icon} />
 
 						<p>{data.sectionFour.card5.text}</p>
 					</article>
 					<article className="card">
-						<img src={data.sectionFour.card6.icon} />
+						<img className="padding_30" src={data.sectionFour.card6.icon} />
 
 						<p>{data.sectionFour.card6.text}</p>
 					</article>
-					<article className="card">
-						<img src={data.sectionFour.card7.icon} />
-
-						<p>{data.sectionFour.card7.text}</p>
-					</article>
 				</div>
+			</div>
+			<div className="section section_cards">
+				<article className="card">
+					<img className="padding_30" src={data.sectionFour.card7.icon} />
+
+					<p>{data.sectionFour.card7.text}</p>
+				</article>
 			</div>
 		</section>
 	</Wrapper>
