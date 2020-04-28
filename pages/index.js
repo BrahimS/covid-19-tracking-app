@@ -47,49 +47,63 @@ const Homepage = ({ data }) => (
 			</div>
 		</section>
 		{/* Section Three */}
-		<section className="section_content">
-			<h1>
-				<span className="heading_span">
-					{data.sectionThree.span}
-					<br />
-				</span>
-				{data.sectionThree.title}
-			</h1>
+		<section className=" section section_content">
 			<div className="">
-				<p className="para_width__50">{data.sectionThree.text}</p>
-				<div className="section section_cards">
-					<article className="card">
-						<img src={data.sectionThree.card1.icon} />
-						<p className="headingTwo">{data.sectionThree.card1.title}</p>
-						<p>{data.sectionThree.card1.text}</p>
-					</article>
-					<article className="card">
-						<img src={data.sectionThree.card2.icon} />
-						<p className="headingTwo">{data.sectionThree.card2.title}</p>
-						<p>{data.sectionThree.card2.text}</p>
-					</article>
-					<article className="card">
-						<img src={data.sectionThree.card3.icon} />
-						<p className="headingTwo">{data.sectionThree.card3.title}</p>
-						<p>{data.sectionThree.card3.text}</p>
-					</article>
-				</div>
-				<div className="section section_cards">
-					<article className="card">
-						<img src={data.sectionThree.card4.icon} />
-						<p className="headingTwo">{data.sectionThree.card4.title}</p>
-						<p>{data.sectionThree.card4.text}</p>
-					</article>
-					<article className="card">
-						<img src={data.sectionThree.card5.icon} />
-						<p className="headingTwo">{data.sectionThree.card5.title}</p>
-						<p>{data.sectionThree.card5.text}</p>
-					</article>
-					<article className="card">
-						<img src={data.sectionThree.card6.icon} />
-						<p className="headingTwo">{data.sectionThree.card6.title}</p>
-						<p>{data.sectionThree.card6.text}</p>
-					</article>
+				<h1>
+					<span className="heading_span">
+						{data.sectionThree.span}
+						<br />
+					</span>
+					{data.sectionThree.title}
+				</h1>
+				<div className="section">
+					<p className="para_width__70">{data.sectionThree.text}</p>
+					<div className="mt_negative__30 ml_30 section_cards">
+						<article className="card_symptoms">
+							<img src={data.sectionThree.card1.icon} />
+							<p className="headingTwo headingTwo_symptoms">
+								{data.sectionThree.card1.title}
+							</p>
+							<p>{data.sectionThree.card1.text}</p>
+						</article>
+						<article className="card_symptoms">
+							<img src={data.sectionThree.card2.icon} />
+							<p className="headingTwo headingTwo_symptoms">
+								{data.sectionThree.card2.title}
+							</p>
+							<p>{data.sectionThree.card2.text}</p>
+						</article>
+						<article className="card_symptoms">
+							<img src={data.sectionThree.card3.icon} />
+							<p className="headingTwo headingTwo_symptoms">
+								{data.sectionThree.card3.title}
+							</p>
+							<p>{data.sectionThree.card3.text}</p>
+						</article>
+					</div>
+					<div className="mt_negative__30 ml_30 section_cards">
+						<article className="card_symptoms">
+							<img src={data.sectionThree.card4.icon} />
+							<p className="headingTwo headingTwo_symptoms">
+								{data.sectionThree.card4.title}
+							</p>
+							<p>{data.sectionThree.card4.text}</p>
+						</article>
+						<article className="card_symptoms">
+							<img src={data.sectionThree.card5.icon} />
+							<p className="headingTwo headingTwo_symptoms">
+								{data.sectionThree.card5.title}
+							</p>
+							<p>{data.sectionThree.card5.text}</p>
+						</article>
+						<article className="card_symptoms">
+							<img src={data.sectionThree.card6.icon} />
+							<p className="headingTwo headingTwo_symptoms">
+								{data.sectionThree.card6.title}
+							</p>
+							<p>{data.sectionThree.card6.text}</p>
+						</article>
+					</div>
 				</div>
 			</div>
 		</section>

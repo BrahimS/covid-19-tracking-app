@@ -54,6 +54,9 @@ body
 		justify-content: center
 		align-items: flex-start
 
+.cards_symptoms
+	margin-top: -3.125em
+	margin-left: 10% !important
 
 .card
 	display: flex
@@ -62,6 +65,14 @@ body
 	align-items: center
 	padding: 0 em(30px)
 	max-width: 400px
+
+	&_symptoms
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		align-items: center
+		padding: 0.875em
+		max-width: 400px
 
 	& p
 		text-align: center
@@ -93,6 +104,8 @@ h1
 	font-size: $font_size__base * 1.2
 	font-family: $font_family__primary
 
+	&_symptoms
+		padding: em(32px) em(10px)
 
 .section_cards
 	& img
