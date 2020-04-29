@@ -1,12 +1,9 @@
 *, *:before, *:after
 	box-sizing: border-box
 
-body
+body, html
 	width: 100vw
-	max-width: 1280px
 	height: 100vh
-	margin: 0 auto
-	padding: em(50px)
 	overflow-x: hidden
 	background: $bkgColor
 	color: $white
@@ -14,6 +11,16 @@ body
 	line-height: $base_line__height
 	font-weight: $font_weight__light
 	font-family: $font_family__primary
+
+.wrapper
+	max-width: 1280px
+	margin: 0 auto
+	height: 100vh
+	padding: em(50px)
+	background: $bkgColor
+
+
+
 
 .header
 	&_padding

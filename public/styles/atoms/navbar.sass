@@ -1,0 +1,33 @@
+nav
+	background: transparent
+	height: 120px
+	& a
+		color: $white
+		font-size: $font_size__base + 4
+		text-decoration: none
+		&::after
+			content: ''
+			position: absolute
+			margin-top: em(5px)
+			margin-left: em(5px)
+			height: em(8px)
+			width: em(8px)
+			background: $orange
+			border-radius: $br_round
+			opacity: 0
+
+		&:hover,
+		&:focus,
+		&:active
+			&::after
+				opacity: 1
+
+
+.main_navigation
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	height: em(80px)
+	width: em(200px)
+	box-sizing: border-box

@@ -1,23 +1,25 @@
 import React from "react";
-import Logo from "./Logo";
+import Logo from "../svgs/coronaLogo.svg";
 import Link from "next/link";
 const Navbar = () => (
 	<header>
 		<div className="logo">
-			<img src={Logo} />
+			<Logo />
 		</div>
-		<ul className="header_padding">
-			<li>
-				<Link href="/">
-					<a>Covid-19</a>
-				</Link>
-			</li>
-			<li>
-				<Link href="/stats">
-					<a>Stats</a>
-				</Link>
-			</li>
-		</ul>
+		<nav className="header_padding">
+			<ul className="main_navigation">
+				<li>
+					<Link href="/">
+						<a>Covid-19</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/stats">
+						<a>Stats</a>
+					</Link>
+				</li>
+			</ul>
+		</nav>
 	</header>
 );
 

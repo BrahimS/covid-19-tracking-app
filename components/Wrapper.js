@@ -1,13 +1,16 @@
+import React, { Fragment } from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Wrapper = ({ children, title }) => (
-	<section>
+	<>
 		<Head>
 			<title>{title}</title>
 		</Head>
 		<Navbar />
 		<section>{children}</section>
-	</section>
+		<Footer />
+	</>
 );
 export default Wrapper;
