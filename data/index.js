@@ -28,3 +28,12 @@ export const getStats = async () => {
 		console.log(error);
 	}
 };
+
+export const curentData = async () => {
+	try {
+		const { data } = await axios.get(`${API}/countries`);
+		console.log(data);
+	} catch (error) {
+		console.log(error);
+	}
+};
