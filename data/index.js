@@ -19,19 +19,19 @@ export const getStats = async () => {
 	}
 };
 
-export const curentDataFetch = async () => {
-	try {
-		const { data } = await axios.get(`${API}/countries`);
-		const currentNeededData = data.map((theData) => ({
-			cases: theData.cases,
-			recovered: theData.recovered,
-			deaths: theData.deaths,
-			tests: theData.tests,
-			updated: theData.updated,
-		}));
-		console.log(currentNeededData);
-		return currentNeededData;
-	} catch (error) {
-		console.log(error);
-	}
-};
+// export const curentDataFetch = async () => {
+// 	try {
+// 		const { data } = await axios.get(`${API}/all`);
+// 		const currentNeededData = data.map((theData) => ({
+// 			cases: theData.cases,
+// 			recovered: theData.recovered,
+// 			deaths: theData.deaths,
+// 			tests: theData.tests,
+// 			updated: theData.updated,
+// 		}));
+// 		console.log(currentNeededData);
+// 		return currentNeededData;
+// 	} catch (error) {
+// 		console.log(error);
+// 	}
+// };

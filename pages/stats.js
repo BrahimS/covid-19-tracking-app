@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Wrapper from "../components/Wrapper";
 import { Picker, Cards, Donut } from "../components";
-import { getStats } from "../data/";
+import { getStats, curentDataFetch } from "../data/";
 
 // const StatsPage = ({ data, country = "Morocco" } = this.props) => (
 // 	<Wrapper title="Stats Page">
@@ -71,7 +71,7 @@ class StatsPage extends Component {
 				<section className="stats_container">
 					<Picker />
 					<Cards data={data} />
-					<Donut />
+					<Donut data={data} />
 				</section>
 			</Wrapper>
 		);

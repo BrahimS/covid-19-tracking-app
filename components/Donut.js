@@ -1,16 +1,14 @@
-import Reaact, { useState, useEffect } from "react";
-import { curentDataFetch } from "../data/";
 import { Doughnut } from "react-chartjs-2";
 
-const Donut = () => {
-	const [todayData, setTodayData] = useState([]);
-	useEffect(() => {
-		const dataFetch = async () => {
-			setTodayData(await curentDataFetch());
-		};
-		console.log(todayData);
-		dataFetch();
-	}, []);
+const Donut = ({ data: { updated, cases, recovered, deaths, tests } }) => {
+	// const [todayData, setTodayData] = useState([]);
+	// useEffect(() => {
+	// 	const dataFetch = async () => {
+	// 		setTodayData(await curentDataFetch());
+	// 	};
+	// 	console.log(todayData);
+	// 	dataFetch();
+	// }, []);
 
 	return (
 		<article className="donut_flex">
@@ -19,22 +17,20 @@ const Donut = () => {
 					labels: ["Tested", "Infected", "Recovered", "Deaths"],
 					datasets: [
 						{
-							data: [
-								todayData.map(({ tests }) => tests),
-								todayData.map(({ cases }) => cases),
-								todayData.map(({ recovered }) => recovered),
-								todayData.map(({ deaths }) => deaths),
-							],
-							backgroundColor: ["#36A2EB", "#F3C052", "#81C5A3", "#D71B53"],
+							data: [tests, cases, recovered, deaths],
+							backgroundColor: ["#36A2EB", "#F3C052", "#81C5A3", "#ff0000"],
 							hoverBackgroundColor: [
 								"#36A2EB",
 								"#F3C052",
 								"#81C5A3",
-								"#D71B53",
+								"#ff0000",
 							],
+							borderColor: "#000050",
 						},
 					],
 				}}
+				width={800}
+				height={600}
 			/>
 		</article>
 	);
