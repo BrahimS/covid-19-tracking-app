@@ -8,7 +8,7 @@ body, html
 	background: $bkgColor
 	color: $white
 	letter-spacing: $letterSpacing
-	line-height: $base_line__height
+	line-height: $line_height__base
 	font-weight: $font_weight__light
 	font-family: $font_family__primary
 
@@ -95,7 +95,7 @@ h1
 	color: $orange
 	padding: $headingPadding
 	letter-spacing: 0
-	line-height: $base_line__height
+	line-height: $line_height__base
 	font-weight: $font_weight__ultraBold
 	font-size: $font_size__base * 2.8
 	font-family: $font_family__primary
@@ -104,7 +104,7 @@ h1
 	color: $orange
 	padding: $headingPadding
 	letter-spacing: 0
-	line-height: $base_line__height
+	line-height: $line_height__base
 	font-weight: $font_weight__ultraBold
 	font-size: $font_size__base * 1.2
 	font-family: $font_family__primary
@@ -145,8 +145,8 @@ h1
 .card_flex
 	display: flex
 	flex-direction: column
-	justify-content: space-around
+	justify-content: space-evenly
 	align-items: center
-	height: em(100px)
-
+	align-content: space-between
+	height: em(280px)
 	width: em(250px)

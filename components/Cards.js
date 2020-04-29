@@ -1,3 +1,7 @@
+import IconInfected from "../public/images/stats/confirmed.svg";
+import IconRecovered from "../public/images/stats/rcovered.svg";
+import IconTested from "../public/images/stats/tested.svg";
+import IconDeaths from "../public/images/stats/deaths.svg";
 const Cards = ({
 	data: { updated, cases, todayCases, recovered, deaths, todayDeaths, tests },
 }) => {
@@ -5,24 +9,32 @@ const Cards = ({
 	return (
 		<div>
 			<p className="stats_text">
-				At today: {new Date(updated).toLocaleDateString()} <br />
+				At today: {new Date(updated).toLocaleString()} <br />
 				The current sitiuation in country is:
 			</p>
 			<div className="section">
 				<article className="card_flex">
+					<IconTested />
+					<h2 className="info info_deaths white">Tested</h2>
+					<p className="info info_deaths white">{tests}</p>
+				</article>
+				<article className="card_flex">
+					<IconInfected />
 					<h2 className="info info_confirmed">Infected</h2>
 					<p className="info info_confirmed">{cases}</p>
-					<span className="info info_confirmed">+{todayCases}</span>
+					{/* <span className="info info_confirmed text_small">+{todayCases}</span> */}
 				</article>
 				<article className="card_flex">
+					<IconRecovered />
 					<h2 className="info info_recovered">Recovered</h2>
 					<p className="info info_recovered">{recovered}</p>
-					<p className="info info_recovered">{""}</p>
+					{/* <p className="info info_recovered text_small"> {""}</p> */}
 				</article>
 				<article className="card_flex">
+					<IconDeaths />
 					<h2 className="info info_deaths">Deaths</h2>
 					<p className="info info_deaths">{deaths}</p>
-					<span className="info info_deaths">+{todayDeaths}</span>
+					{/* <span className="info info_deaths text_small">+{todayDeaths}</span> */}
 				</article>
 			</div>
 		</div>
