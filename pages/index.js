@@ -58,7 +58,7 @@ const Homepage = ({ data }) => (
 				</h1>
 				<div className="section">
 					<p className="para_width__70">{data.sectionThree.text}</p>
-					<div className="mt_negative__30 ml_30 section_cards">
+					<div className="mt_negative__30 section_cards">
 						<article className="card_symptoms">
 							<img src={data.sectionThree.card1.icon} />
 							<p className="headingTwo headingTwo_symptoms">
@@ -81,7 +81,7 @@ const Homepage = ({ data }) => (
 							<p>{data.sectionThree.card3.text}</p>
 						</article>
 					</div>
-					<div className="mt_negative__30 ml_30 section_cards">
+					<div className="mt_negative__30 section_cards">
 						<article className="card_symptoms">
 							<img src={data.sectionThree.card4.icon} />
 							<p className="headingTwo headingTwo_symptoms">
