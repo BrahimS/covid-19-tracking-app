@@ -63,7 +63,6 @@ class StatsPage extends Component {
 	async componentDidMount() {
 		const allData = await getStats();
 		this.setState({ data: allData });
-		console.log({ allData });
 	}
 	render() {
 		const { data } = this.state;

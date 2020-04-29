@@ -5,7 +5,6 @@ import IconDeaths from "../public/images/stats/deaths.svg";
 const Cards = ({
 	data: { updated, cases, todayCases, recovered, deaths, todayDeaths, tests },
 }) => {
-	console.log(recovered);
 	return (
 		<div>
 			<p className="stats_text">
@@ -15,8 +14,8 @@ const Cards = ({
 			<div className="section">
 				<article className="card_flex">
 					<IconTested />
-					<h2 className="info info_deaths white">Tested</h2>
-					<p className="info info_deaths white">{tests}</p>
+					<h2 className="info info_deaths blue">Tested</h2>
+					<p className="info info_deaths blue">{tests}</p>
 				</article>
 				<article className="card_flex">
 					<IconInfected />
