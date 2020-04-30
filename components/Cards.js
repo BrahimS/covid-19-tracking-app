@@ -20,7 +20,7 @@ const Cards = ({
 		<div>
 			<p className="stats_text">
 				At today: {new Date(updated).toLocaleString()} <br />
-				`The current sitiuation in ${country} is:`
+				The current sitiuation in your Country is:
 			</p>
 			<div className="section">
 				<article className="card_flex">

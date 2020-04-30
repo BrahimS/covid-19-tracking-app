@@ -77,8 +77,8 @@ class StatsPage extends Component {
 		return (
 			<Wrapper>
 				<section className="stats_container">
-					<Picker handleChange={this.handleChange} />
-					<Cards data={data} />
+					<Picker handleChange={this.handleChange} data={data} />
+					<Cards data={data} handleChange={this.handleChange} />
 					<Donut data={data} />
 				</section>
 			</Wrapper>
