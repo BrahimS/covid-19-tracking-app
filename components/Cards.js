@@ -5,13 +5,22 @@ import IconDeaths from "../public/images/stats/deaths.svg";
 import formatNumber from "../helpers";
 
 const Cards = ({
-	data: { updated, cases, todayCases, recovered, deaths, todayDeaths, tests },
+	data: {
+		country,
+		updated,
+		cases,
+		todayCases,
+		recovered,
+		deaths,
+		todayDeaths,
+		tests,
+	},
 }) => {
 	return (
 		<div>
 			<p className="stats_text">
 				At today: {new Date(updated).toLocaleString()} <br />
-				The current sitiuation in country is:
+				`The current sitiuation in ${country} is:`
 			</p>
 			<div className="section">
 				<article className="card_flex">

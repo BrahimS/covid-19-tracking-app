@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Wrapper from "../components/Wrapper";
 import { Picker, Cards, Donut } from "../components";
-import { getStats, curentDataFetch } from "../data/";
+import { getStats } from "../data/";
 
 // const StatsPage = ({ data, country = "Morocco" } = this.props) => (
 // 	<Wrapper title="Stats Page">
@@ -59,17 +59,25 @@ import { getStats, curentDataFetch } from "../data/";
 class StatsPage extends Component {
 	state = {
 		data: {},
+		country: "",
 	};
 	async componentDidMount() {
 		const allData = await getStats();
 		this.setState({ data: allData });
 	}
+
+	handleChange = async (country) => {
+		const comingData = await getStats(country);
+
+		console.log(comingData);
+		console.log(country);
+	};
 	render() {
 		const { data } = this.state;
 		return (
 			<Wrapper>
 				<section className="stats_container">
-					<Picker />
+					<Picker handleChange={this.handleChange} />
 					<Cards data={data} />
 					<Donut data={data} />
 				</section>

@@ -1,11 +1,16 @@
 import axios from "axios";
 const API = "https://corona.lmao.ninja/v2";
 
-export const getStats = async () => {
+export const getStats = async (country) => {
+	let changeEndPoint = `${API}/all`;
+	if (country) {
+		changeEndPoint = `${API}/countries/${country}`;
+	}
+
 	try {
 		const {
 			data: { updated, cases, recovered, deaths, tests },
-		} = await axios.get(`${API}/all`);
+		} = await axios.get(changeEndPoint);
 		const neededData = {
 			cases,
 			recovered,
@@ -19,19 +24,11 @@ export const getStats = async () => {
 	}
 };
 
-// export const curentDataFetch = async () => {
-// 	try {
-// 		const { data } = await axios.get(`${API}/all`);
-// 		const currentNeededData = data.map((theData) => ({
-// 			cases: theData.cases,
-// 			recovered: theData.recovered,
-// 			deaths: theData.deaths,
-// 			tests: theData.tests,
-// 			updated: theData.updated,
-// 		}));
-// 		console.log(currentNeededData);
-// 		return currentNeededData;
-// 	} catch (error) {
-// 		console.log(error);
-// 	}
-// };
+export const fetchCountries = async () => {
+	try {
+		const { data } = await axios.get(`${API}/countries`);
+		return data.map((country) => country.country);
+	} catch (error) {
+		console.log(error);
+	}
+};
