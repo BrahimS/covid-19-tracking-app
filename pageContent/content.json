@@ -2,6 +2,67 @@ Tree
 Chart
 JSON Input
 {
+<<<<<<< HEAD
+"sectionOne": {
+"span": "What is",
+"title": "Covid-19?",
+"text": "COVID-19 is the infectious disease caused by the most recently discovered coronavirus*. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally. *Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.",
+"img": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/coronaHero.svg"
+},
+"sectionTwo": {
+"span": "How does it",
+"title": "Spread?",
+"text": "People can catch COVID-19 from others who have the virus. The disease spreads primarily from person to person through",
+"card1": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/spread/droplets.svg",
+"title": "Droplets",
+"text": "Small droplets from the nose or mouth, which are expelled when a person with COVID-19 coughs, sneezes, or speaks."
+},
+"card2": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/spread/surfaces.svg",
+"title": "Objects & surfaces",
+"text": "These droplets can land on objects and surfaces around the person such as tables, doorknobs and handrails. People can become infected by touching these objects or surfaces, then touching their eyes, nose or mouth"
+},
+"card3": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/spread/contact.svg",
+"title": "Close contact",
+"text": "You can be infected by breathing the virus if you are near a sick person"
+}
+},
+"sectionThree": {
+"span": "What is the",
+"title": "Symptoms?",
+"text": "The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Some patients may have aches and pains, nasal congestion, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but only have very mild symptoms. Most people (about 80%) recover from the disease without needing hospital treatment. Around 1 out of every 5 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, or cancer , are at higher risk of developing serious illness. However anyone can catch COVID-19 and become seriously ill. Even people with very mild symptoms of COVID-19 can transmit the virus. People of all ages who experience fever, cough and difficulty breathing should seek medical attention",
+"card1": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/fever.svg",
+"title": "Fever"
+},
+"card2": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/cough.svg",
+"title": "Dry cough"
+},
+"card3": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/throal.svg",
+"title": "Sore Throat"
+},
+"card4": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/nausea.svg",
+"title": "Nausea & Vomiting"
+},
+"card5": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/headache.svg",
+"title": "Headache"
+},
+"card6": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/diarrhea.svg",
+"title": "Diarrhea"
+}
+},
+"sectionFour": {
+"span": "How to protect",Tree
+Chart
+JSON Input
+{
 "sectionOne": {
 "span": "What is",
 "title": "Covid-19?",
@@ -90,4 +151,126 @@ JSON Input
 "text": "If you have a fever, cough and difficulty breathing, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority. National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections."
 }
 }
+}
+"title": "your Self? and others",
+"text": "Stay aware of the latest information on the COVID-19 outbreak, available on the WHO website and through your national and local public health authority. Most countries around the world have seen cases of COVID-19 and many are experiencing outbreaks. Authorities in China and some other countries have succeeded in slowing their outbreaks. However, the situation is unpredictable so check regularly for the latest news. You can reduce your chances of being infected or spreading COVID-19 by taking some simple precautions:",
+"card1": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/handWashing.svg",
+"text": "Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands."
+},
+"card2": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/distance.svg",
+"text": "Maintain at least 1 metre (3 feet) distance between yourself and others. When someone coughs, sneezes, or speaks they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person has the disease."
+},
+"card3": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/crowd.svg",
+"text": "Avoid going to crowded places. Where people come together in crowds, you are more likely to come into close contact with someone that has COIVD-19 and it is more difficult to maintain physical distance of 1 metre (3 feet)."
+},
+"card4": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/mask.svg",
+"text": "Avoid touching eyes, nose and mouth. Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you."
+},
+"card5": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/sneeze.svg",
+"text": "Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately and wash your hands. Droplets spread virus. By following good respiratory hygiene, you protect the people around you from viruses such as cold, flu and COVID-19."
+},
+"card6": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/stayHome.svg",
+"text": "Stay home and self-isolate even with minor symptoms such as cough, headache, mild fever, until you recover. Have someone bring you supplies. If you need to leave your house, wear a mask to avoid infecting others. Why? Avoiding contact with others will protect them from possible COVID-19 and other viruses."
+},
+"card7": {
+"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/callDoctor.svg",
+"text": "If you have a fever, cough and difficulty breathing, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority. National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections."
+}
+}
+=======
+	"sectionOne": {
+		"span": "What is",
+		"title": "Covid-19?",
+		"text": "COVID-19 is the infectious disease caused by the most recently discovered coronavirus*. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019. COVID-19 is now a pandemic affecting many countries globally. *Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.",
+		"img": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/coronaHero.svg"
+	},
+	"sectionTwo": {
+		"span": "How does it",
+		"title": "Spread?",
+		"text": "People can catch COVID-19 from others who have the virus. The disease spreads primarily from person to person through",
+		"card1": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/spread/droplets.svg",
+			"title": "Droplets",
+			"text": "Small droplets from the nose or mouth, which are expelled when a person with COVID-19 coughs, sneezes, or speaks."
+		},
+		"card2": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/spread/surfaces.svg",
+			"title": "Objects & surfaces",
+			"text": "These droplets can land on objects and surfaces around the person such as tables, doorknobs and handrails. People can become infected by touching these objects or surfaces, then touching their eyes, nose or mouth"
+		},
+		"card3": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/spread/contact.svg",
+			"title": "Close contact",
+			"text": "You can be infected by breathing the virus if you are near a sick person"
+		}
+	},
+	"sectionThree": {
+		"span": "What is the",
+		"title": "Symptoms?",
+		"text": "The most common symptoms of COVID-19 are fever, dry cough, and tiredness. Some patients may have aches and pains, nasal congestion, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but only have very mild symptoms. Most people (about 80%) recover from the disease without needing hospital treatment. Around 1 out of every 5 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, or cancer , are at higher risk of developing serious illness. However anyone can catch COVID-19 and become seriously ill. Even people with very mild symptoms of COVID-19 can transmit the virus. People of all ages who experience fever, cough and difficulty breathing should seek medical attention",
+		"card1": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/fever.svg",
+			"title": "Fever"
+		},
+		"card2": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/cough.svg",
+			"title": "Dry cough"
+		},
+		"card3": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/throal.svg",
+			"title": "Sore Throat"
+		},
+		"card4": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/nausea.svg",
+			"title": "Nausea & Vomiting"
+		},
+		"card5": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/headache.svg",
+			"title": "Headache"
+		},
+		"card6": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/symptoms/diarrhea.svg",
+			"title": "Diarrhea"
+		}
+	},
+	"sectionFour": {
+		"span": "How to protect",
+		"title": "Yourself and Others?",
+		"text": "Stay aware of the latest information on the COVID-19 outbreak, available on the WHO website and through your national and local public health authority. Most countries around the world have seen cases of COVID-19 and many are experiencing outbreaks. Authorities in China and some other countries have succeeded in slowing their outbreaks. However, the situation is unpredictable so check regularly for the latest news. You can reduce your chances of being infected or spreading COVID-19 by taking some simple precautions:",
+		"card1": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/handWashing.svg",
+			"text": "Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands."
+		},
+		"card2": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/distance.svg",
+			"text": "Maintain at least 1 metre (3 feet) distance between yourself and others. When someone coughs, sneezes, or speaks they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person has the disease."
+		},
+		"card3": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/crowd.svg",
+			"text": "Avoid going to crowded places. Where people come together in crowds, you are more likely to come into close contact with someone that has COIVD-19 and it is more difficult to maintain physical distance of 1 metre (3 feet)."
+		},
+		"card4": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/mask.svg",
+			"text": "Avoid touching eyes, nose and mouth. Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you."
+		},
+		"card5": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/sneeze.svg",
+			"text": "Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately and wash your hands. Droplets spread virus. By following good respiratory hygiene, you protect the people around you from viruses such as cold, flu and COVID-19."
+		},
+		"card6": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/stayHome.svg",
+			"text": "Stay home and self-isolate even with minor symptoms such as cough, headache, mild fever, until you recover. Have someone bring you supplies. If you need to leave your house, wear a mask to avoid infecting others. Why? Avoiding contact with others will protect them from possible COVID-19 and other viruses."
+		},
+		"card7": {
+			"icon": "https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/public/images/protection/callDoctor.svg",
+			"text": "If you have a fever, cough and difficulty breathing, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority. National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections."
+		}
+	}
+>>>>>>> b0385b0044d245d0c7e6e59ad3e8b7c11b9efcce
 }
