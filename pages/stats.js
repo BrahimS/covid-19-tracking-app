@@ -12,11 +12,10 @@ class StatsPage extends Component {
 		const allData = await getStats();
 		this.setState({ data: allData });
 	}
-
+	s;
 	handleChange = async (country) => {
 		const comingData = await getStats(country);
 		this.setState({ data: comingData, country: country });
-		console.log(comingData);
 	};
 	render() {
 		const { data, country } = this.state;

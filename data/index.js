@@ -37,6 +37,8 @@ export const getStats = async (country) => {
 export const fetchCountries = async () => {
 	try {
 		const { data } = await axios.get(`${API}/countries`);
+		const result = data.find(({ country }) => country === "Western Sahara");
+		result.country = "";
 		return data.map((country) => country.country);
 	} catch (error) {
 		console.log(error);
