@@ -25,26 +25,39 @@ const Cards = ({
 			<div className="section">
 				<article className="card_flex">
 					<IconTested />
-					<h2 className="info info_deaths blue">Tested</h2>
-					<p className="info info_deaths blue">{formatNumber(tests)}</p>
+					<div>
+						<h2 className="info info_deaths blue">Tested</h2>
+						<p className="info info_deaths blue bold">{formatNumber(tests)}</p>
+					</div>
 				</article>
 				<article className="card_flex">
+					<div className=" small bold bgPlus yellow">
+						+{formatNumber(todayCases)}
+					</div>
 					<IconInfected />
-					<h2 className="info info_confirmed">Infected</h2>
-					<p className="info info_confirmed">{formatNumber(cases)}</p>
-					{/* <span className="info info_confirmed text_small">+{todayCases}</span> */}
+					<div>
+						<h2 className="info info_confirmed">Infected</h2>
+						<p className="info info_confirmed bold">{formatNumber(cases)}</p>
+					</div>
 				</article>
 				<article className="card_flex">
 					<IconRecovered />
-					<h2 className="info info_recovered">Recovered</h2>
-					<p className="info info_recovered">{formatNumber(recovered)}</p>
-					{/* <p className="info info_recovered text_small"> {""}</p> */}
+					<div>
+						<h2 className="info info_recovered">Recovered</h2>
+						<p className="info info_recovered bold">
+							{formatNumber(recovered)}
+						</p>
+					</div>
 				</article>
 				<article className="card_flex">
+					<div className=" red small bold bgPlus">
+						+{formatNumber(todayDeaths)}
+					</div>
 					<IconDeaths />
-					<h2 className="info info_deaths">Deaths</h2>
-					<p className="info info_deaths">{formatNumber(deaths)}</p>
-					{/* <span className="info info_deaths text_small">+{todayDeaths}</span> */}
+					<div>
+						<h2 className="info info_deaths">Deaths</h2>
+						<p className="info info_deaths bold">{formatNumber(deaths)}</p>
+					</div>
 				</article>
 			</div>
 		</div>

@@ -9,12 +9,22 @@ export const getStats = async (country) => {
 
 	try {
 		const {
-			data: { updated, cases, recovered, deaths, tests },
+			data: {
+				updated,
+				cases,
+				todayCases,
+				recovered,
+				deaths,
+				todayDeaths,
+				tests,
+			},
 		} = await axios.get(changeEndPoint);
 		const neededData = {
 			cases,
+			todayCases,
 			recovered,
 			deaths,
+			todayDeaths,
 			tests,
 			updated,
 		};
