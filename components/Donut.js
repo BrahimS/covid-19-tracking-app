@@ -31,6 +31,23 @@ const Donut = ({ data: { updated, cases, recovered, deaths, tests } }) => {
 				}}
 				width={600}
 				height={400}
+				options={{
+					maintaineAspectRatio: true,
+					legend: {
+						display: true,
+						position: "right",
+						align: "center",
+						labels: {
+							boxWidth: 20,
+							boxHeight: 20,
+							padding: 10,
+							fontColor: "#fff",
+							usePointStyle: {
+								display: true,
+							},
+						},
+					},
+				}}
 			/>
 		</article>
 	);
