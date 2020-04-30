@@ -35,7 +35,7 @@ body, html
 		flex-direction: row
 
 	&_content
-		padding-bottom: em(70px)
+		padding-bottom: em(190px)
 
 		&__para
 
@@ -70,14 +70,20 @@ body, html
 	align-items: center
 	padding: 0 em(30px)
 	max-width: 400px
-
+	margin-bottom: em(30px)
 	&_symptoms
 		display: flex
 		flex-direction: row
 		justify-content: flex-start
 		align-items: center
-		padding: 0.875em
+		padding: 0.1em 0.875em
+		margin-bottom: em(30px)
 		max-width: 400px
+
+		@include mediaQ('small')
+			flex-direction: column
+			margin-bottom: em(10px)
+
 
 	& p
 		text-align: center
@@ -89,6 +95,7 @@ body, html
 	display: block
 	margin-bottom: ($unitEm)
 	color: $grey
+	font-weight: $font_weight__regular
 	font-size: ($unitPx * 2.5)
 
 h1
@@ -111,10 +118,11 @@ h1
 
 	&_symptoms
 		padding: em(32px) em(10px)
+		font-size: $font_size__base
 
 .section_cards
 	& img
-		max-width: em(150px)
+		max-width: em(100px)
 
 .stats_container
 	display: flex
