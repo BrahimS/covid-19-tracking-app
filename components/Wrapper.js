@@ -11,7 +11,7 @@ const Wrapper = ({ children, title }) => (
 		</Head>
 		<motion.section
 			className="mt_200"
-			initial={{ opacity: 0, y: "40%" }}
+			initial={{ opacity: 0, y: "10%" }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 1.2 }}
 		>
