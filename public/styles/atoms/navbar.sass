@@ -1,8 +1,12 @@
+a
+	text-decoration: none
+	color: $orange !important
+
 nav
 
 	& a
 		text-decoration: none
-		color: $orange
+		color: $orange !important
 		font-weight: $font_weight__regular
 		font-size: $font_size__base + 4
 		&::after
@@ -19,8 +23,10 @@ nav
 		&:hover,
 		&:focus,
 		&:active
+			color: $orange !important
 			&::after
 				opacity: 1
+
 
 .header
 	position: fixed
