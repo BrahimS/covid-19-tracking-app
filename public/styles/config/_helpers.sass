@@ -34,6 +34,8 @@
 	color: $lightBlue !important
 .yellow
 	color: $yellow !important
+.orange
+	color: $orange !important
 .red
 	color: $red !important
 .bold
@@ -56,4 +58,9 @@
 	position: relative
 	top: 60px
 	left: 40px
+
+.mt_200
+	margin-top: em(300px) !important
+	@include mediaQ('small')
+		margin-top: em(300px) / 2 !important
 

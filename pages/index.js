@@ -1,5 +1,7 @@
 import Wrapper from "../components/Wrapper";
+
 import fetch from "isomorphic-unfetch";
+
 const Homepage = ({ data }) => (
 	<Wrapper title="Home Page">
 		{/* Section One */}

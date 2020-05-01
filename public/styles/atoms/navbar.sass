@@ -1,10 +1,10 @@
 nav
-	background: transparent
-	height: 120px
+
 	& a
-		color: $white
-		font-size: $font_size__base + 4
 		text-decoration: none
+		color: $orange
+		font-weight: $font_weight__regular
+		font-size: $font_size__base + 4
 		&::after
 			content: ''
 			position: absolute
@@ -12,7 +12,7 @@ nav
 			margin-left: em(5px)
 			height: em(8px)
 			width: em(8px)
-			background: $orange
+			background: $white
 			border-radius: $br_round
 			opacity: 0
 
@@ -22,12 +22,29 @@ nav
 			&::after
 				opacity: 1
 
+.header
+	position: fixed
+	background: $darkBlue
+	width: 100vw
+	opacity: .9
+	box-shadow: $boxShadow
+	z-index: 5000
+
 
 .main_navigation
 	display: flex
 	flex-direction: row
-	justify-content: space-between
-	align-items: center
-	height: em(80px)
-	width: em(200px)
-	box-sizing: border-box
+	justify-content: end
+	align-content: space-between
+	max-width: em(1280px)
+	margin: 0 auto
+	padding: em(20px) em(50px)
+
+	& ul
+		display: flex
+		justify-content: flex-end
+		align-content: end
+		align-items: center
+		width: 100%
+	& li
+			width: em(130px)
