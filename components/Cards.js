@@ -18,7 +18,7 @@ const Cards = ({
 				</span>{" "}
 				is:
 			</p>
-			<div className="section">
+			<div className="section section_stats">
 				<motion.article
 					className="card_flex"
 					initial={{ scale: 0 }}

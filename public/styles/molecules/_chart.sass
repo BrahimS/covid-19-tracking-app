@@ -8,6 +8,10 @@
 	text-align: center
 	margin-bottom: em(80px)
 	font-size: $font_size__base + 4
+	@include mediaQ('small')
+		margin-bottom: em(20px)
+	@include mediaQ('medium')
+		margin-bottom: em(20px)
 
 .info
 	text-align: center
@@ -35,10 +39,21 @@
 	align-content: space-between
 	height: 100%
 	width: em(250px)
+	@include mediaQ('small')
+		width: em(150px)
+	@include mediaQ('medium')
+		width: em(180px)
 
 	& svg
 		width: em(100px)
+.section_stats
+	@include mediaQ('small')
+		flex-direction: row
+		flex-wrap: wrap
+		// width: em(350px)
 
 
 .chartjs-render-monitor
 	margin: em(80px) 0
+	@include mediaQ('small')
+		margin: em(20px) 0
