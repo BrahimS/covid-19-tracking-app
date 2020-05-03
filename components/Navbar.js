@@ -19,12 +19,12 @@ const Navbar = () => {
 				</motion.div>
 				<ul className="">
 					<li>
-						<Link href="/">
+						<Link href="/about">
 							<a>Covid-19</a>
 						</Link>
 					</li>
 					<li>
-						<Link href="/stats">
+						<Link href="/">
 							<a>Stats</a>
 						</Link>
 					</li>
