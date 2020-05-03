@@ -3,6 +3,7 @@ import IconRecovered from "../public/images/stats/rcovered.svg";
 import IconTested from "../public/images/stats/tested.svg";
 import IconDeaths from "../public/images/stats/deaths.svg";
 import formatNumber from "../helpers";
+import { motion } from "framer-motion";
 
 const Cards = ({
 	country,
@@ -18,14 +19,35 @@ const Cards = ({
 				is:
 			</p>
 			<div className="section">
-				<article className="card_flex">
+				<motion.article
+					className="card_flex"
+					initial={{ scale: 0 }}
+					animate={{ scale: 1 }}
+					transition={{
+						type: "spring",
+						stiffness: 100,
+						damping: 100,
+						duration: 0.5,
+					}}
+				>
 					<IconTested />
 					<div>
 						<h2 className="info info_deaths blue">Tested</h2>
 						<p className="info info_deaths blue bold">{formatNumber(tests)}</p>
 					</div>
-				</article>
-				<article className="card_flex">
+				</motion.article>
+				<motion.article
+					className="card_flex"
+					className="card_flex"
+					initial={{ scale: 0 }}
+					animate={{ scale: 1 }}
+					transition={{
+						type: "spring",
+						stiffness: 100,
+						damping: 100,
+						duration: 1,
+					}}
+				>
 					<div className=" small bold bgPlus yellow">
 						+{formatNumber(todayCases)}
 					</div>
@@ -34,8 +56,19 @@ const Cards = ({
 						<h2 className="info info_confirmed">Infected</h2>
 						<p className="info info_confirmed bold">{formatNumber(cases)}</p>
 					</div>
-				</article>
-				<article className="card_flex">
+				</motion.article>
+				<motion.article
+					className="card_flex"
+					className="card_flex"
+					initial={{ scale: 0 }}
+					animate={{ scale: 1 }}
+					transition={{
+						type: "spring",
+						stiffness: 100,
+						damping: 100,
+						duration: 1.5,
+					}}
+				>
 					<IconRecovered />
 					<div>
 						<h2 className="info info_recovered">Recovered</h2>
@@ -43,8 +76,19 @@ const Cards = ({
 							{formatNumber(recovered)}
 						</p>
 					</div>
-				</article>
-				<article className="card_flex">
+				</motion.article>
+				<motion.article
+					className="card_flex"
+					className="card_flex"
+					initial={{ scale: 0 }}
+					animate={{ scale: 1 }}
+					transition={{
+						type: "spring",
+						stiffness: 100,
+						damping: 100,
+						duration: 2,
+					}}
+				>
 					<div className=" red small bold bgPlus">
 						+{formatNumber(todayDeaths)}
 					</div>
@@ -53,7 +97,7 @@ const Cards = ({
 						<h2 className="info info_deaths">Deaths</h2>
 						<p className="info info_deaths bold">{formatNumber(deaths)}</p>
 					</div>
-				</article>
+				</motion.article>
 			</div>
 		</div>
 	);
