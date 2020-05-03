@@ -6,7 +6,7 @@ import "../public/styles/index.sass";
 
 function BsApp({ Component, pageProps }) {
 	useEffect(() => {
-		GoogleAnalytics.initialize("UA-165401975-1");
+		GoogleAnalytics.initialize(process.env.ga);
 		GoogleAnalytics.pageview(window.location.pathname);
 	}, []);
 	return (

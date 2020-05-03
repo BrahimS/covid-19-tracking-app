@@ -30,12 +30,16 @@ body, html
 	@include mediaQ('small')
 		flex-direction: column
 	@include mediaQ('medium')
-		flex-direction: column
+		flex-direction: row
 	@include mediaQ('large')
 		flex-direction: row
 
 	&_content
 		padding-bottom: em(140px)
+		@include mediaQ('small')
+			padding-bottom: em(40px)
+		@include mediaQ('medium')
+			padding-bottom: em(40px)
 
 		&__para
 
@@ -54,6 +58,10 @@ body, html
 		&__hero
 			margin-top: em(-50px)
 			margin-left: 10% !important
+			@include mediaQ('small')
+				display: none
+			@include mediaQ('medium')
+				display: none
 
 	&_cards
 		justify-content: center
@@ -71,6 +79,10 @@ body, html
 	padding: 0 em(30px)
 	max-width: 400px
 	margin-bottom: em(30px)
+	@include mediaQ('small')
+		max-width: none
+	@include mediaQ('medium')
+		max-width: none
 	&_symptoms
 		display: flex
 		flex-direction: row
@@ -83,6 +95,10 @@ body, html
 		@include mediaQ('small')
 			flex-direction: column
 			margin-bottom: em(10px)
+		@include mediaQ('small')
+			display: none
+		@include mediaQ('medium')
+			display: none
 
 
 	& p
