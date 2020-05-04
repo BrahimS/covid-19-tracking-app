@@ -1,3 +1,9 @@
+// Breakpoints
+$brkpoint_sm: 1px
+$brkpoint_md: 767px
+$brkpoint_lg: 1023px
+$brkpoint_xlg: 1280px
+
 // Media queries
 @mixin mediaQ($break)
   @if $break == "small"
@@ -5,11 +11,11 @@
         @content
 
   @else if $break == "medium"
-    @media (min-width: $brkpoint_md + 1)
+    @media (min-width: $brkpoint_md + 1) and (max-width: $brkpoint_lg)
       @content
 
   @else if $break == "large"
-    @media (min-width: $brkpoint_lg + 1)
+    @media (min-width: $brkpoint_lg + 1) and (max-width: $brkpoint_xlg - 1)
       @content
 
   @else if $break == "x_large"
