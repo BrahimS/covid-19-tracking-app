@@ -1,4 +1,4 @@
-**COVID-19 tracker web application**
+# **COVID-19 tracker web application**
 
 ## Description:
 
