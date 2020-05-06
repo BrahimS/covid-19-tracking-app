@@ -10,7 +10,7 @@ const Wrapper = ({ children, title }) => (
 			<title>{title}</title>
 		</Head>
 		<motion.section
-			className="mt_200"
+			className="mt_150"
 			initial={{ opacity: 0, y: "10%" }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 1.2 }}

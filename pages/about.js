@@ -1,13 +1,9 @@
-import react, { useEffect } from "react";
 import Wrapper from "../components/Wrapper";
 import fetch from "isomorphic-unfetch";
 import { motion } from "framer-motion";
 import AOS from "aos";
 
 const Homepage = ({ data }) => {
-	useEffect(() => {
-		AOS.init({ duration: 2000 });
-	}, []);
 	return (
 		<Wrapper title="Home Page">
 			{/* Section One */}
