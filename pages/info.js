@@ -6,7 +6,7 @@ const info = () => {
 			<section clasName="section_content">
 				<h1>COVID-19 tracker web application</h1>
 				<article>
-					<h2>Description:</h2>
+					<h2 className="hedding_h2">Description:</h2>
 					<p>
 						This application provides data concerning the progress of COVID-19
 						in the world. It also gives us information about this virus, how it
@@ -14,7 +14,7 @@ const info = () => {
 					</p>
 				</article>
 				<article>
-					<h2>Motivation:</h2>
+					<h2 className="hedding_h2">Motivation:</h2>
 					<p>
 						Like everyone today, my daily life is turned upside down by
 						COVID-19. I learned a lot about this virus and especially how to
@@ -30,7 +30,7 @@ const info = () => {
 					</p>
 				</article>
 				<article className="mb_200">
-					<h2>Sources:</h2>
+					<h2 className="hedding_h2">Sources:</h2>
 					<p>
 						- Home page content is comming from the{" "}
 						<Link href="https://www.who.int/">
