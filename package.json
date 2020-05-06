@@ -1,6 +1,6 @@
 {
 	"name": "covid-19.tracking-app",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A corona web application to track real time data in the world and give some practical informations about the corona virus",
 	"main": "index.js",
 	"scripts": {
