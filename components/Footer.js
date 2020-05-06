@@ -12,7 +12,7 @@ const Footer = () => (
 		</div>
 		<div>
 			About this
-			<Link href="/">
+			<Link href="/info">
 				<a className="purple"> web Application </a>
 			</Link>
 		</div>
