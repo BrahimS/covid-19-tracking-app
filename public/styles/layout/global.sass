@@ -118,10 +118,13 @@ h1
 	color: $orange
 	padding: $headingPadding
 	letter-spacing: 0
-	line-height: $line_height__base
+	line-height: $line_height__base * 2
 	font-weight: $font_weight__ultraBold
 	font-size: $font_size__base * 2.8
 	font-family: $font_family__primary
+	span
+		line-height: $line_height__base - 10
+
 
 .hedding_h2
 	color: $orange
@@ -155,4 +158,6 @@ canvas
 	@include mediaQ('small')
 		display: none
 	@include mediaQ('medium')
+		width: 80%
+	@include mediaQ('large')
 		width: 80%
