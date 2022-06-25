@@ -33,7 +33,7 @@
 		"framer-motion": "^1.10.3",
 		"isomorphic-unfetch": "^3.0.0",
 		"next": "^9.3.6",
-		"node-fetch": "^2.6.0",
+		"node-fetch": "^2.6.7",
 		"react": "^16.13.1",
 		"react-chartjs-2": "^2.9.0",
 		"react-dom": "^16.13.1",
