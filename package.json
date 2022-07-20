@@ -28,7 +28,7 @@
 	"dependencies": {
 		"aos": "^3.0.0-beta.6",
 		"axios": "^0.21.1",
-		"chart.js": "^2.9.3",
+		"chart.js": "^2.9.4",
 		"dotenv": "^8.2.0",
 		"framer-motion": "^1.10.3",
 		"isomorphic-unfetch": "^3.0.0",
