@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { AppProps } from "next/app";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import GoogleAnalytics from "react-ga";
 import "../public/styles/index.sass";
