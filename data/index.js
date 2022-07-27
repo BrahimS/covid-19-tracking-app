@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = "https://corona.lmao.ninja/v2";
+const API = "https://disease.sh/v3/covid-19";
 
 export const getStats = async (country) => {
 	let changeEndPoint = `${API}/all`;
