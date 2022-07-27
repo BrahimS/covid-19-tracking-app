@@ -38,7 +38,6 @@ const Cards = ({
 				</motion.article>
 				<motion.article
 					className="card_flex"
-					className="card_flex"
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					transition={{
@@ -59,7 +58,6 @@ const Cards = ({
 				</motion.article>
 				<motion.article
 					className="card_flex"
-					className="card_flex"
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
 					transition={{
@@ -78,7 +76,6 @@ const Cards = ({
 					</div>
 				</motion.article>
 				<motion.article
-					className="card_flex"
 					className="card_flex"
 					initial={{ scale: 0 }}
 					animate={{ scale: 1 }}
