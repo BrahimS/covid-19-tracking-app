@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Footer unchanged 1`] = `
+<div>
+  <footer
+    class="footer_info"
+  >
+    <div>
+      ©
+      2022
+      <a
+        class=""
+        href="https://brahimsourny.pro"
+      >
+         
+        Made with 💜 by 
+        <span
+          class="purple"
+        >
+          Brahim Sourny
+        </span>
+      </a>
+    </div>
+    <div>
+      About this
+      <a
+        class="purple"
+        href="/info"
+      >
+         web Application 
+      </a>
+    </div>
+  </footer>
+</div>
+`;
