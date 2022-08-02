@@ -1,3 +1,5 @@
+import { Chart, ArcElement } from "chart.js";
+Chart.register(ArcElement);
 import { Doughnut } from "react-chartjs-2";
 
 const Donut = ({ data: { updated, cases, recovered, deaths, tests } }) => {
