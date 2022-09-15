@@ -1,8 +1,20 @@
 import axios from "axios";
 const API = "https://disease.sh/v3/covid-19";
 
-export const getStats = async (country) => {
-	let changeEndPoint = `${API}/all`;
+interface ChartData {
+	data: {
+		updated: number;
+		cases: number;
+		todayCases: number;
+		recovered: number;
+		deaths: number;
+		todayDeaths: number;
+		tests: number;
+	};
+}
+
+export const getStats = async (country: string) => {
+	let changeEndPoint: string | undefined = `${API}/all`;
 	if (country) {
 		changeEndPoint = `${API}/countries/${country}`;
 	}
@@ -18,7 +30,7 @@ export const getStats = async (country) => {
 				todayDeaths,
 				tests,
 			},
-		} = await axios.get(changeEndPoint);
+		}: ChartData = await axios.get(changeEndPoint);
 		const neededData = {
 			cases,
 			todayCases,

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { fetchCountries } from "../data";
-const Picker = ({ handleChange }) => {
-	const [getCountries, setGetCountries] = useState([]);
+import { AppProps } from "next/app";
+import { fetchCountries } from "../data/index";
+const Picker: React.FC = ({ handleChange }: AppProps) => {
+	const [getCountries, setGetCountries] = useState<string[]>([]);
+
 	useEffect(() => {
 		const pickCountry = async () => {
 			setGetCountries(await fetchCountries());

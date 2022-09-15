@@ -1,5 +1,7 @@
+import React from "react";
 import Link from "next/link";
-const Footer = () => (
+
+const Footer: React.FC = (): JSX.Element => (
 	<footer className="footer_info">
 		<div>
 			©{new Date().getFullYear()}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Wrapper from "../components/Wrapper";
-import { Picker, Cards, Donut } from "../components";
-import { getStats } from "../data";
+import { Picker, Cards, Donut } from "../components/index.ts";
+import { getStats } from "../data/index";
 
 class StatsPage extends Component {
 	state = {
@@ -13,7 +13,7 @@ class StatsPage extends Component {
 		this.setState({ data: allData });
 	}
 	s;
-	handleChange = async (country) => {
+	handleChange = async (country: string) => {
 		const comingData = await getStats(country);
 		this.setState({ data: comingData, country: country });
 	};

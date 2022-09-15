@@ -1,10 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Footer from "./Footer.tsx";
 
-import Footer from "./Footer";
+interface Content {
+	title: string;
+	children: string;
+}
 
-const Wrapper = ({ children, title }) => (
+const Wrapper: React.FC = ({ title, children }: Content): JSX.Element => (
 	<>
 		<Head>
 			<title>{title}</title>

@@ -1,9 +1,9 @@
+import { motion } from "framer-motion";
+import formatNumber from "../helpers/index";
 import IconInfected from "../public/images/stats/confirmed.svg";
 import IconRecovered from "../public/images/stats/rcovered.svg";
 import IconTested from "../public/images/stats/tested.svg";
 import IconDeaths from "../public/images/stats/deaths.svg";
-import formatNumber from "../helpers/index.ts";
-import { motion } from "framer-motion";
 
 interface DataCard {
 	country: string;

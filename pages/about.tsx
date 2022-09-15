@@ -1,9 +1,9 @@
+import React from "react";
 import Wrapper from "../components/Wrapper";
 import fetch from "isomorphic-unfetch";
 import { motion } from "framer-motion";
-import AOS from "aos";
 
-const Homepage = ({ data }) => {
+const Homepage: React.FC = ({ data }) => {
 	return (
 		<Wrapper title="Home Page">
 			{/* Section One */}
@@ -194,12 +194,9 @@ const Homepage = ({ data }) => {
 
 export async function getStaticProps() {
 	// Call an external API endpoint to get posts.
-	const API = `https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/pageContent/content.json`;
+	const API: string = `https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/pageContent/content.json`;
 	const res = await fetch(API);
 	const data = await res.json();
-
-	// By returning { props: posts }, the Blog component
-	// will receive `posts` as a prop at build time
 	return {
 		props: {
 			data,

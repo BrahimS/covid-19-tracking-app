@@ -1,7 +1,9 @@
+import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Logo from "../svgs/coronaLogo.svg";
-const Navbar = () => {
+
+const Navbar: React.FC = (): JSX.Element => {
 	return (
 		<header className="header">
 			<nav className="main_navigation">
