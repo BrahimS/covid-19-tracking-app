@@ -22,7 +22,7 @@ const Cards = ({
 				<motion.article
 					className="card_flex"
 					initial={{ scale: 0 }}
-					animate={{ scale: 1 }}
+					animate={{ scale: 0.8 }}
 					transition={{
 						type: "spring",
 						stiffness: 100,
@@ -39,7 +39,7 @@ const Cards = ({
 				<motion.article
 					className="card_flex"
 					initial={{ scale: 0 }}
-					animate={{ scale: 1 }}
+					animate={{ scale: 0.8 }}
 					transition={{
 						type: "spring",
 						stiffness: 100,
@@ -59,7 +59,7 @@ const Cards = ({
 				<motion.article
 					className="card_flex"
 					initial={{ scale: 0 }}
-					animate={{ scale: 1 }}
+					animate={{ scale: 0.8 }}
 					transition={{
 						type: "spring",
 						stiffness: 100,
@@ -78,7 +78,7 @@ const Cards = ({
 				<motion.article
 					className="card_flex"
 					initial={{ scale: 0 }}
-					animate={{ scale: 1 }}
+					animate={{ scale: 0.8 }}
 					transition={{
 						type: "spring",
 						stiffness: 100,
