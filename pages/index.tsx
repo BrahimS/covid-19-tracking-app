@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Wrapper from "../components/Wrapper";
-import { Picker, Cards, Donut } from "../components/index.ts";
+import { Picker, Cards, Donut } from "../components/index";
 import { getStats } from "../data/index";
 
 class StatsPage extends Component {

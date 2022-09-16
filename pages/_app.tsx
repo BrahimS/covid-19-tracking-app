@@ -1,6 +1,6 @@
 import { useEffect, FC } from "react";
-import Navbar from "../components/Navbar.tsx";
 import GoogleAnalytics from "react-ga";
+import Navbar from "../components/Navbar";
 import "../public/styles/index.sass";
 
 const BsApp: FC = ({ Component, pageProps }: any) => {

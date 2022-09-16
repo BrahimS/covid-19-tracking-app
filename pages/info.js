@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Wrapper from "../components/Wrapper.tsx";
+import Wrapper from "../components/Wrapper";
+
 const info = () => {
 	return (
 		<Wrapper title="Informations about this application">

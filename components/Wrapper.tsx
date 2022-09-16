@@ -1,14 +1,14 @@
-import React from "react";
+import { ReactNode } from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Footer from "./Footer.tsx";
+import Footer from "./Footer";
 
-interface Content {
+interface ContentProps {
 	title: string;
-	children: string;
+	children: ReactNode;
 }
 
-const Wrapper: React.FC = ({ title, children }: Content): JSX.Element => (
+const Wrapper = ({ title, children }: ContentProps): JSX.Element => (
 	<>
 		<Head>
 			<title>{title}</title>

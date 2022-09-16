@@ -1,18 +1,18 @@
+import React from "react";
 import { Chart, ArcElement } from "chart.js";
 Chart.register(ArcElement);
 import { Doughnut } from "react-chartjs-2";
+import { ChartData } from "../types/index";
 
-interface ChartData {
-	data: {
-		cases: number;
-		recovered: number;
-		deaths: number;
-	};
+declare namespace JSX {
+	interface IntrinsicElements {
+		Doughnut: any;
+	}
 }
 
-const Donut = ({
+const Donut: React.FC = ({
 	data: { cases, recovered, deaths },
-}: ChartData): JSX.Element => {
+}: ChartData): JSX.IntrinsicElements => {
 	return (
 		<article className="donut_flex">
 			<Doughnut

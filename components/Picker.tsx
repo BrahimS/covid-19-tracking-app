@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, FC } from "react";
 import { AppProps } from "next/app";
 import { fetchCountries } from "../data/index";
-const Picker: React.FC = ({ handleChange }: AppProps) => {
+
+const Picker: FC = ({ handleChange }: AppProps) => {
 	const [getCountries, setGetCountries] = useState<string[]>([]);
 
 	useEffect(() => {

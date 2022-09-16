@@ -1,9 +1,10 @@
-import React from "react";
 import Wrapper from "../components/Wrapper";
 import fetch from "isomorphic-unfetch";
 import { motion } from "framer-motion";
+import { InferGetStaticPropsType } from "next";
+import { Content } from "../types/index";
 
-const Homepage: React.FC = ({ data }) => {
+const Homepage = ({ data }: InferGetStaticPropsType<typeof getStaticProps>) => {
 	return (
 		<Wrapper title="Home Page">
 			{/* Section One */}
@@ -193,10 +194,9 @@ const Homepage: React.FC = ({ data }) => {
 };
 
 export async function getStaticProps() {
-	// Call an external API endpoint to get posts.
-	const API: string = `https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/pageContent/content.json`;
+	const API = process.env.NEXT_PUBLIC_API_CONTENT;
 	const res = await fetch(API);
-	const data = await res.json();
+	const data: Content[] = await res.json();
 	return {
 		props: {
 			data,

@@ -1,19 +1,13 @@
 import axios from "axios";
-const API = "https://disease.sh/v3/covid-19";
+import { ChartData } from "../types/index";
 
-interface ChartData {
-	data: {
-		updated: number;
-		cases: number;
-		todayCases: number;
-		recovered: number;
-		deaths: number;
-		todayDeaths: number;
-		tests: number;
-	};
-}
+const API = process.env.NEXT_PUBLIC_API_HOST;
 
-export const getStats = async (country: string) => {
+type Country = {
+	country: string;
+};
+
+export const getStats = async (country: Country) => {
 	let changeEndPoint: string | undefined = `${API}/all`;
 	if (country) {
 		changeEndPoint = `${API}/countries/${country}`;
@@ -49,9 +43,11 @@ export const getStats = async (country: string) => {
 export const fetchCountries = async () => {
 	try {
 		const { data } = await axios.get(`${API}/countries`);
-		const result = data.find(({ country }) => country === "Western Sahara");
+		const result = data.find(
+			({ country }: Country) => country === "Western Sahara"
+		);
 		result.country = "";
-		return data.map((country) => country.country);
+		return data.map((country: Country) => country.country);
 	} catch (error) {
 		console.log(error);
 	}

@@ -4,26 +4,14 @@ import IconInfected from "../public/images/stats/confirmed.svg";
 import IconRecovered from "../public/images/stats/rcovered.svg";
 import IconTested from "../public/images/stats/tested.svg";
 import IconDeaths from "../public/images/stats/deaths.svg";
-
-interface DataCard {
-	country: string;
-	data: {
-		updated: number;
-		cases: number;
-		todayCases: number;
-		recovered: number;
-		deaths: number;
-		todayDeaths: number;
-		tests: number;
-	};
-}
+import { DataCard } from "../types/index";
 
 const Cards = ({
 	country,
 	data: { updated, cases, todayCases, recovered, deaths, todayDeaths, tests },
-}: DataCard): JSX.Element => {
+}: DataCard) => {
 	return (
-		<div>
+		<>
 			<p className="stats_text">
 				At today: {new Date(updated).toLocaleString()} <br />
 				The current situation in <span className="orange bold">
@@ -109,7 +97,7 @@ const Cards = ({
 					</div>
 				</motion.article>
 			</div>
-		</div>
+		</>
 	);
 };
 
