@@ -1,7 +1,5 @@
 import Wrapper from "../components/Wrapper";
-import fetch from "isomorphic-unfetch";
 import { motion } from "framer-motion";
-import AOS from "aos";
 
 const Homepage = ({ data }) => {
 	return (
@@ -192,14 +190,10 @@ const Homepage = ({ data }) => {
 	);
 };
 
-export async function getStaticProps() {
-	// Call an external API endpoint to get posts.
-	const API = `https://raw.githubusercontent.com/BrahimS/covid-19-tracking-app/master/pageContent/content.json`;
+export async function getServerSideProps() {
+	const API = process.env.NEXT_PUBLIC_API_CONTENT;
 	const res = await fetch(API);
 	const data = await res.json();
-
-	// By returning { props: posts }, the Blog component
-	// will receive `posts` as a prop at build time
 	return {
 		props: {
 			data,
