@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = "https://disease.sh/v3/covid-19";
+const API = process.env.NEXT_PUBLIC_API_HOST;
 
 export const getStats = async (country) => {
 	let changeEndPoint = `${API}/all`;
