@@ -1,73 +1,78 @@
 {
-	"name": "covid-19.tracking-app",
-	"version": "1.0.2",
-	"description": "A corona web application to track real time data in the world and give some practical informations about the corona virus",
-	"main": "index.js",
-	"scripts": {
-		"dev": "next",
-		"build": "next build",
-		"start": "next start",
-		"test": "jest --watch",
-		"test:coverage": "jest --coverage",
-		"cypress": "cypress open",
-		"storybook": "start-storybook -p 6006",
-		"build-storybook": "build-storybook"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/BrahimS/covid-19-tracking-app.git"
-	},
-	"keywords": [
-		"Data",
-		"Tracking",
-		"app",
-		"ReactJs",
-		"NextJs"
-	],
-	"author": "Brahim Sourny",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/BrahimS/covid-19-tracking-app/issues"
-	},
-	"homepage": "https://github.com/BrahimS/covid-19-tracking-app#readme",
-	"dependencies": {
-		"aos": "^3.0.0-beta.6",
-		"axios": "^0.21.2",
-		"chart.js": "^3.8.2",
-		"dotenv": "^16.0.1",
-		"framer-motion": "^7.3.5",
-		"isomorphic-unfetch": "^3.0.0",
-		"next": "^12.2.4",
-		"node-fetch": "^3.2.10",
-		"react": "^18.2.0",
-		"react-chartjs-2": "^4.3.1",
-		"react-dom": "^18.2.0",
-		"react-ga": "^3.3.1",
-		"sass": "^1.26.5"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.18.10",
-		"@storybook/addon-actions": "^6.5.12",
-		"@storybook/addon-essentials": "^6.5.12",
-		"@storybook/addon-interactions": "^6.5.12",
-		"@storybook/addon-links": "^6.5.12",
-		"@storybook/builder-webpack5": "^6.5.12",
-		"@storybook/manager-webpack5": "^6.5.12",
-		"@storybook/react": "^6.5.12",
-		"@storybook/testing-library": "^0.0.13",
-		"@testing-library/jest-dom": "^5.16.5",
-		"@testing-library/react": "^13.4.0",
-		"babel-loader": "^8.2.5",
-		"babel-plugin-inline-react-svg": "^2.0.1",
-		"cypress": "^10.8.0",
-		"jest": "^29.0.3",
-		"jest-environment-jsdom": "^29.0.3",
-		"jest-sonar-reporter": "^2.0.0"
-	},
-	"browserslist": [
-		">0.3%",
-		"not ie 11",
-		"not dead",
-		"not op_mini all"
-	]
+  "name": "covid-19.tracking-app",
+  "version": "1.0.2",
+  "description": "A corona web application to track real time data in the world and give some practical informations about the corona virus",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "cypress": "cypress open",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrahimS/covid-19-tracking-app.git"
+  },
+  "keywords": [
+    "Data",
+    "Tracking",
+    "app",
+    "ReactJs",
+    "NextJs"
+  ],
+  "author": "Brahim Sourny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrahimS/covid-19-tracking-app/issues"
+  },
+  "homepage": "https://github.com/BrahimS/covid-19-tracking-app#readme",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "axios": "^0.21.2",
+    "chart.js": "^3.8.2",
+    "dotenv": "^16.0.1",
+    "framer-motion": "^7.3.5",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^12.2.4",
+    "node-fetch": "^3.2.10",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
+    "storybook-addon-sass-postcss": "^0.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "css-loader": "^6.7.1",
+    "cypress": "^10.8.0",
+    "jest": "^29.0.3",
+    "jest-environment-jsdom": "^29.0.3",
+    "jest-sonar-reporter": "^2.0.0",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ]
 }
