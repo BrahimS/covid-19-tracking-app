@@ -28,16 +28,16 @@ This project was born out of the necessity to consolidate data from multiple hea
    ```bash
    git clone https://github.com/BrahimS/covid-19-tracking-app.git
    cd covid-19-tracking-app
-    ```
-2 - Install dependencies:
+   ```
+2. Install dependencies:
    ```bash
 		npm install
    ```
-3- Run the development server:
- ```bash
+3. Run the development server:
+ 	```bash
 		npm run dev
-   ```
-4- Visit the app at http://localhost:3000.
+  	```
+4. Visit the app at http://localhost:3000.
 
 ## Sources:
 
