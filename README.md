@@ -39,6 +39,9 @@ This project was born out of the necessity to consolidate data from multiple hea
   	```
 4. Visit the app at http://localhost:3000.
 
+Live Demo
+Check out the live version of the app: covid19-bs.now.sh
+
 ## Sources:
 
 - Home page content is comming from the [WHO](https://www.who.int/)
