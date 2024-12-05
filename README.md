@@ -2,16 +2,42 @@
 
 ## Description:
 
-This application provides data concerning the progress of COVID-19 in the world. It also gives us information about this virus, how it spreads, how to protect against it.
+# COVID-19 Tracking App
 
-##Motivation:
-Like everyone today, my daily life is turned upside down by COVID-19.
-So I learned a lot about this virus and especially how to protect myself and my family.
-I also wanted to know the progression of this pandemic throughout the world.
+A web application providing real-time data on the progress of COVID-19 worldwide, along with important information about the virus and protective measures.
 
-Every day, I went to three different health ministry websites, of three different countries: France, where I currently live, Switzerland where I work punctually and Morocco where I am born, and return there from time to time.
+## Motivation
 
-After three weeks of repeating this process, I've decided to create this application, which allows me and everyone who wish to have a single source of information about COVID-19 and how it progresses in worldwide.
+This project was born out of the necessity to consolidate data from multiple health ministry websites for France, Switzerland, and Morocco into a single platform. It aims to simplify access to COVID-19 statistics and resources for users globally.
+
+## Features
+
+- **Real-Time Statistics:** Retrieves live data on COVID-19 cases, recoveries, and deaths worldwide using an open-source API.
+- **Educational Content:** Provides information sourced from the WHO about COVID-19 transmission and prevention.
+
+## Tech Stack
+
+- **Frontend:** Next.js, React
+- **Styling:** Sass, CSS
+- **Testing:** Cypress, Jest
+- **API:** [Corona Ninja API](https://corona.lmao.ninja)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/BrahimS/covid-19-tracking-app.git
+   cd covid-19-tracking-app
+    ```
+2 - Install dependencies:
+   ```bash
+		npm install
+   ```
+3- Run the development server:
+ ```bash
+		npm run dev
+   ```
+4- Visit the app at http://localhost:3000.
 
 ## Sources:
 
